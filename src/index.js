@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './styles/main.css';
+import {Greeting} from './components/Greeting/Greeting';
+import {Search} from './components/Search/Search';
+import {TodoList} from './components/TodoList/TodoList';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Main = () => {
+    const [todos, setTodos] = useState([]);
+    const [input, setInput] = useState('');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    return (
+        <div className="mainContainer">
+            <Greeting />
+            <Search input={input} setInput={setInput} setTodos={setTodos} todos={todos}/>
+            <TodoList todos={todos} setTodos={setTodos}/>
+        </div>
+    )
+}
+
+ReactDOM.render(<Main />, document.getElementById('root'));
