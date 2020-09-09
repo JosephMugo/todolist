@@ -2,9 +2,9 @@
 ## 9/8/2020
 ### Mobile
 #### ( HTML, CSS, JAVASCRIPT, REACT )
-![Mobile](https://github.com/JosephMugo/todolist/blob/b9e07da756c6e69f4b1d31b6e483a6052143a35d/mobile.PNG)
+![Mobile](https://github.com/JosephMugo/todolist/blob/master/mobile.PNG)
 ### Desktop
-![Desktop](https://github.com/JosephMugo/todolist/blob/b9e07da756c6e69f4b1d31b6e483a6052143a35d/desktop.PNG)
+![Desktop](https://github.com/JosephMugo/todolist/blob/master/desktop.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
